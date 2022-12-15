@@ -1,0 +1,26 @@
+GET http://localhost:5000/customers
+###
+GET http://localhost:5000/customers/1
+
+###
+POST http://localhost:5000/customers
+Content-Type: application/json
+
+{
+  "nama" : "John Doe",
+  "telephone" : "083153571907"
+}
+
+###
+
+PATCH http://localhost:5000/customers/1
+Content-Type: application/json
+
+{
+  "nama" : "John Doe updated",
+  "telephone" : "083153571907"
+}
+
+###
+
+DELETE http://localhost:5000/customers/1
